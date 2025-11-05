@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Athalla Shop - Fashion Modest Wanita</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#A38A7F", // A warm, sophisticated taupe
+                        "background-light": "#F9F6F5", // A very light, warm off-white
+                        "background-dark": "#2D2A2A", // A deep, muted brown-black
+                        "text-light": "#4F4A45",
+                        "text-dark": "#E5E0DD",
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#393635",
+                        "border-light": "#E5E0DD",
+                        "border-dark": "#4F4A45",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        body: ["Poppins", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem", // 8px
+                        lg: "1rem", // 16px
+                        xl: "1.5rem", // 24px
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .carousel {
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel-item {
+            scroll-snap-align: center;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark transition-colors duration-300">
+<div id="root">
+<header class="fixed top-0 left-0 right-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center justify-between">
+<a class="text-2xl font-display font-bold text-text-light dark:text-text-dark" href="#">Athalla Shop</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#categories">Kategori</a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#testimonials">Testimoni</a>
+<a class="hover:text-primary dark:hover:text-primary transition-colors" href="#why-us">Tentang Kami</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-card-dark transition-colors">
+<span class="material-icons-outlined">search</span>
+</button>
+<button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-card-dark transition-colors">
+<span class="material-icons-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="pt-24 min-h-screen flex items-center" id="hero">
+<div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2 text-center lg:text-left">
+<h1 class="text-5xl md:text-7xl font-display font-bold text-text-light dark:text-text-dark leading-tight">Keanggunan dalam Setiap Gaya</h1>
+<p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/80 max-w-xl mx-auto lg:mx-0">
+                        Temukan koleksi fashion modest pilihan kami, di mana gaya abadi bertemu dengan kenyamanan modern. Dirancang untuk wanita anggun.
+                    </p>
+<a class="mt-8 inline-block bg-primary text-white py-3 px-8 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg" href="#categories">Belanja Sekarang</a>
+</div>
+<div class="lg:w-1/2 w-full relative h-[70vh] max-h-[600px]">
+<div class="carousel flex overflow-x-auto snap-x snap-mandatory h-full rounded-lg shadow-2xl" id="carousel-container">
+<div class="carousel-item flex-shrink-0 w-full h-full relative">
+<img alt="Wanita mengenakan blus bergaris biru muda dan celana senada" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVHE44Nuzj6nrko6kKYlAfecK2C2at5gU-zmeJpvu-tdw6dm2IXsUIy_Cw32qdUTxFmlWYkadJe7PuZvuiklA1O6BtaJcEW9SixCnwjvKYD7TFAcSTlEE9W5ol09p5d0m0QLCFPxaWFnbPMi11un6TTi1cPadbs6D81QZ1kso2Hyjwb-1r9oA12dZ9FFCrqKRheQllEJu-5OL96AAejrdWUfbX31l6e5kTiHyOMxt0D6-r3DrOVJXs4di6qONqEjMm8l5Ma8QJzaB5"/>
+</div>
+<div class="carousel-item flex-shrink-0 w-full h-full relative">
+<img alt="Wanita mengenakan blus taupe dengan kerah berhias dan celana senada" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcNcXXOXuAWfOdffGNi-l60IcHcRyqPi6JTknAwOZoRGPK3VMfOmlPVssOpkZ7Vb_Zvo7jVeTyo_1k1oogk2vBSqc4MY9tmFfpoKMLs_bMKveTPZ6xpqN2CXtQfFu7jE0yWQPA8TGqkJ_3VteThn1hY2WI4qAT1oQGXONsnKNg4bC93vnvsI8dSMJqb9dWWHSmQKIHgYFsKLQtI1JmiImUIFwVnkZ_MbZoKYvBsVaL4BqxpmU6DyirscGpjK6FDrj0bq158MKaWe0y"/>
+</div>
+<div class="carousel-item flex-shrink-0 w-full h-full relative">
+<img alt="Wanita mengenakan blus bergaris putih dan hijau dengan celana krem" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYmYjuy1VJqSb4CrrmgkkSEQ4_eanFRgjfig2UgHSPx_TnUbVwJnqMQfJbg7LcAtA7CfEbb-sSIwf-hmCFBf3hDdyrzvpb6V6_0AAc00v-rwK0cRwm9MViie7clqJM1uegvhj_ulQ-gokRws_jphqLebX4MKwXSAUbIaFGm9hH-vICPMr5QbDLdQ1dwHSjJgpY2VfE7PFVTX35hpsoIe7KoDe11X4QsLxYpUrGoYbTFGAyZVlsGHIelVlorvQ8TAXfUEdfjSQ-m4yP"/>
+</div>
+<div class="carousel-item flex-shrink-0 w-full h-full relative">
+<img alt="Wanita mengenakan set piyama satin merah muda dengan emblem panda" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0xMaD1JMPq7xG4Y7Wyl0CtvK2W3AHakpEYxfMmMF7DJIKhBny4n9oxU9lSiByXcJi5GBc_OJ72qOmrmmH_4wDsMJ988_0WypLyLy9Vu5EmqSCZOW3N3gdGa3CyCOSDtlUc_VKYcUdeJBxmImZuYqXS56PLF7VRm5okpwWgtvOg2sOg1mHO_idTg1Jxfmq7w1foV68a5rk4q5rdJvH81DbL9p4jyNNsw-LdY2Gr8rJpsnhVymZDY-UnU38e9EfPWg4XROPythFKb3b"/>
+</div>
+</div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2" id="carousel-dots">
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark" id="categories">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl font-display font-bold mb-2">Kategori Pilihan</h2>
+<p class="text-text-light/70 dark:text-text-dark/70 mb-12 max-w-2xl mx-auto">Jelajahi beragam pilihan busana modest kami yang dirancang untuk setiap momen spesial Anda.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Kategori: Atasan &amp; Blus" class="w-full h-96 object-cover transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5xRaq54Xy85MbawPWcri9cFvGOmm1O0XKs1Hht8jGYu80cPOck0gvNIvQhZR-PG5lmBAuQI2CHI_txgQZHfNtFAmjnKI-dDm7JT_b_l7Lcl3uoc7LRjl-HUvGTvL8VtIRnN0oibNg2uwUMK41by3mIXPNVOuB56QFH47CGJI06ZWP8CrN1g7oVWTaYte1-C9y6ttYpfoWfZ3ZlZu1DITOkFtsiW5ggcpNlKFM0JLkUxss9-IGNdsJsTgLRNKVVMCpBt2_5yuNXdWL"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-2xl font-display font-semibold">Atasan &amp; Blus</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Kategori: Celana" class="w-full h-96 object-cover transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3xkF-TzRpfnsDeIwbPzBZG3IUpqeZx5MPG2zfe3tM5bMkYVB6GJS2JsKMmNbVmdmk23qQx8QWciqshDQjO5_6p1Yp5-tt7BqFUnEM8Qx2e6IHCcNcaJBMpkl3I9dEKZOgyWd2YRu-RBeNAwRAb46IoifKkvaYZnvZUh49PcJAEC9R7Frzqp2i8AaWe4PDcslqaVBK-slJXxnFxikeRYYvO4NZAFLvddaso6r79Fz9ivLcFTHyBDtz0Ug44Hu77vkWy4HNakizRaUh"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-2xl font-display font-semibold">Celana</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Kategori: Rajutan &amp; Cardigan" class="w-full h-96 object-cover transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG5VHnE9JJKGfo7KBRC86foxgQ6lV8pO-Wfwr1-408KIl24iHCtGsBm_TkNkekUeulYXa88lJU79OyhcJUKtUUq-rK1KcyaRQq9rPIxe-8NqsyZiJfWeD_qLzsXS-iD-nNWR8qc1KPsVzTCElAf0xBKBnkbFVeFifMXz2p2zNRl_ciOmepXJ6Crx-XTc4I_iV5sZXBMhuyFwXcjkwbmW6aco9wz3RTBS_n2PhS3OD37Ezb6LB4OqCZbfJex3ntellZT3nSMVlIKUXB"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-2xl font-display font-semibold">Rajutan</h3>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-md">
+<img alt="Kategori: Pakaian Santai" class="w-full h-96 object-cover transform group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARaWwA-zJVa_UYga3MmkYIZzek2v3M9eB-xGN9WxTIp640IO3288XJRB4PC1ArLb7Z16OWQ5S5heYQCWk0pA8cjQK1TgIDDfJKRF1UJd_gN1e5dw3UGkug-a4K8gvXoJZhVHPuPJTn9s8GnxOZ9wxuN8LkQIZnr9r0XNjCtrkB1YPdGiThrMinN8w8pbx4fTmCaRljfADrOSEF8zG54R1KE_0uyE7sMNwlu7HLqhwgCp2SrBjUorA2gNrRnWfkCs-Dcmozs0FiShj1"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<h3 class="text-white text-2xl font-display font-semibold">Pakaian Santai</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-card-light dark:bg-card-dark" id="why-us">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-display font-bold mb-2">Mengapa Memilih Kami?</h2>
+<p class="text-text-light/70 dark:text-text-dark/70 max-w-2xl mx-auto">Kami percaya pada fashion yang memberdayakan. Setiap desain dibuat dengan sepenuh hati, berfokus pada hal yang terpenting.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+<div class="p-6">
+<div class="flex items-center justify-center mb-4 text-primary bg-primary/10 w-16 h-16 rounded-full mx-auto">
+<span class="material-icons-outlined text-3xl">spa</span>
+</div>
+<h3 class="text-xl font-display font-semibold mb-2">Kenyamanan Maksimal</h3>
+<p class="text-text-light/80 dark:text-text-dark/80">Kami menggunakan bahan premium yang sejuk dan nyaman dipakai sepanjang hari.</p>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-center mb-4 text-primary bg-primary/10 w-16 h-16 rounded-full mx-auto">
+<span class="material-icons-outlined text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-xl font-display font-semibold mb-2">Gaya Abadi</h3>
+<p class="text-text-light/80 dark:text-text-dark/80">Desain kami serbaguna dan tahan lama, melampaui tren sesaat dengan siluet klasik.</p>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-center mb-4 text-primary bg-primary/10 w-16 h-16 rounded-full mx-auto">
+<span class="material-icons-outlined text-3xl">verified</span>
+</div>
+<h3 class="text-xl font-display font-semibold mb-2">Kualitas Premium</h3>
+<p class="text-text-light/80 dark:text-text-dark/80">Setiap detail, dari jahitan hingga sentuhan akhir, dibuat dengan teliti untuk daya tahan dan kesempurnaan.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background-light dark:bg-background-dark" id="testimonials">
+<div class="container mx-auto px-6">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-display font-bold mb-2">Apa Kata Mereka?</h2>
+<p class="text-text-light/70 dark:text-text-dark/70">Kami sangat menghargai cinta dan dukungan dari komunitas kami.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-sm">
+<p class="italic text-text-light/90 dark:text-text-dark/90 mb-6">"Kualitas kainnya luar biasa. Sangat lembut dan nyaman, tapi tetap terlihat chic. Selalu dapat pujian setiap kali pakai baju dari Athalla Shop!"</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
+<span>FA</span>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold">Fatima A.</h4>
+<p class="text-sm text-text-light/60 dark:text-text-dark/60">Pelanggan Terverifikasi</p>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-sm">
+<p class="italic text-text-light/90 dark:text-text-dark/90 mb-6">"Akhirnya, brand yang mengerti fashion modest! Potongannya pas dan bagus di badan. Saya sudah beli tiga potong lagi."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
+<span>ZK</span>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold">Zainab K.</h4>
+<p class="text-sm text-text-light/60 dark:text-text-dark/60">Pelanggan Terverifikasi</p>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-8 rounded-lg shadow-sm">
+<p class="italic text-text-light/90 dark:text-text-dark/90 mb-6">"Saya suka estetika minimalis dan perhatian pada detailnya. Layanan pelanggannya juga fantastis. Sangat direkomendasikan."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">
+<span>SY</span>
+</div>
+<div class="ml-4">
+<h4 class="font-semibold">Samira Y.</h4>
+<p class="text-sm text-text-light/60 dark:text-text-dark/60">Pelanggan Terverifikasi</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-primary/10 dark:bg-card-dark" id="newsletter">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-4xl font-display font-bold mb-2 text-text-light dark:text-text-dark">Dapatkan Update Terbaru!</h2>
+<p class="text-text-light/70 dark:text-text-dark/70 mb-8 max-w-xl mx-auto">Berlangganan buletin kami untuk penawaran eksklusif, pengumuman koleksi baru, dan inspirasi gaya.</p>
+<form class="max-w-lg mx-auto flex flex-col sm:flex-row gap-4">
+<input class="w-full px-5 py-3 rounded-full border border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-text-light/50 dark:placeholder-text-dark/50" placeholder="Masukkan alamat email Anda" required="" type="email"/>
+<button class="bg-primary text-white py-3 px-8 rounded-full font-medium hover:bg-opacity-90 transition-all transform hover:scale-105 shrink-0" type="submit">Berlangganan</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-card-light dark:bg-card-dark">
+<div class="container mx-auto px-6 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+<div class="col-span-1 lg:col-span-1">
+<a class="text-2xl font-display font-bold text-text-light dark:text-text-dark" href="#">Athalla Shop</a>
+<p class="mt-4 text-text-light/70 dark:text-text-dark/70">Menciptakan kepercayaan diri melalui fashion yang sopan, elegan, dan abadi.</p>
+</div>
+<div>
+<h4 class="font-semibold font-display text-lg">Belanja</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Koleksi Baru</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Terlaris</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Semua Koleksi</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Diskon</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold font-display text-lg">Tentang</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Kisah Kami</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Bahan &amp; Perawatan</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Keberlanjutan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold font-display text-lg">Dukungan</h4>
+<ul class="mt-4 space-y-2">
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Hubungi Kami</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary transition-colors" href="#">Pengiriman &amp; Pengembalian</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-border-light dark:border-border-dark flex flex-col sm:flex-row justify-between items-center text-sm text-text-light/60 dark:text-text-dark/60">
+<p>© 2024 Athalla Shop. Hak Cipta Dilindungi.</p>
+<div class="flex space-x-4 mt-4 sm:mt-0">
+<a class="hover:text-primary transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-primary transition-colors" href="#">Ketentuan Layanan</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.getElementById('carousel-container');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const dotsContainer = document.getElementById('carousel-dots');
+        let currentIndex = 0;
+        let intervalId;
+        if (items.length > 0) {
+            // Create dots
+            items.forEach((_, index) => {
+                const dot = document.createElement('button');
+                dot.classList.add('w-2.5', 'h-2.5', 'rounded-full', 'transition-all', 'duration-300');
+                dot.dataset.index = index;
+                dotsContainer.appendChild(dot);
+            });
+            const dots = dotsContainer.querySelectorAll('button');
+            function updateCarousel() {
+                items.forEach((item, index) => {
+                    if (index === currentIndex) {
+                        item.style.opacity = 1;
+                    }
+                });
+                carousel.scrollTo({
+                    left: carousel.offsetWidth * currentIndex,
+                    behavior: 'smooth'
+                });
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('bg-white', 'w-4');
+                        dot.classList.remove('bg-white/50');
+                    } else {
+                        dot.classList.add('bg-white/50');
+                        dot.classList.remove('bg-white', 'w-4');
+                    }
+                });
+            }
+            function startAutoplay() {
+                intervalId = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % items.length;
+                    updateCarousel();
+                }, 5000);
+            }
+            function stopAutoplay() {
+                clearInterval(intervalId);
+            }
+            dots.forEach(dot => {
+                dot.addEventListener('click', () => {
+                    stopAutoplay();
+                    currentIndex = parseInt(dot.dataset.index);
+                    updateCarousel();
+                    startAutoplay();
+                });
+            });
+            // Use Intersection Observer for better performance on scroll updates
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        const intersectingIndex = Array.from(items).indexOf(entry.target);
+                        if (currentIndex !== intersectingIndex) {
+                            currentIndex = intersectingIndex;
+                            updateCarousel();
+                        }
+                    }
+                });
+            }, { root: carousel, threshold: 0.5 });
+            items.forEach(item => observer.observe(item));
+            updateCarousel();
+            startAutoplay();
+            carousel.addEventListener('mouseenter', stopAutoplay);
+            carousel.addEventListener('mouseleave', startAutoplay);
+        }
+    });
+</script>
+
+</body></html>
